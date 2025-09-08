@@ -1,9 +1,11 @@
-fn read (y: bool){
-    if y {
-        println!("It is true!");
-    }
-}
 fn main(){
-    let c=true;
-    read(c);
+    let first =String::from("Ferris");
+    let full = add_suffix(first);
+    println!("{full}");
+
+}
+
+fn add_suffix(mut name: String) -> String {
+    name.push_str(" Jr.");
+    name
 }
